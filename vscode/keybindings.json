@@ -1,0 +1,20 @@
+[
+  {
+    "key": "ctrl+shift+f",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  }
+]
+

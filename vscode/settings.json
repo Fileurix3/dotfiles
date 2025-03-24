@@ -1,0 +1,17 @@
+{
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.stickyTabStops": true,
+  "editor.lineNumbers": "relative",
+  "prettier.printWidth": 90,
+  "database-client.autoSync": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "explorer.confirmDelete": false,
+  "material-icon-theme.activeIconPack": "none",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
+}
