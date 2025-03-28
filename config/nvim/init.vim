@@ -18,18 +18,18 @@ set numberwidth=1
 set clipboard=unnamedplus
 syntax on
 
-set expandtab                  " Заменяем табуляции на пробелы
-set tabstop=2                  " Количество пробелов для табуляции
-set shiftwidth=2               " Количество пробелов при автодобавлении отступов
-set softtabstop=2              " Количество пробелов при автотабуляции
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
-set smarttab                   " Умное поведение табуляции
-set smartindent                " Умное выравнивание для кода
+set smarttab
+set smartindent
 
-set mouse=a                    " Включаем поддержку мыши
+set mouse=a
 
-set hlsearch                   " Включаем подсветку поиска
-set incsearch                 " Поиск по мере ввода
+set hlsearch
+set incsearch
 
 "NERTtree plugin"
 autocmd VimEnter * NERDTree | wincmd p
