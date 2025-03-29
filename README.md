@@ -1,9 +1,15 @@
 # My hyprland config
 
-**dependencies**: `hyprland htop nvim cava hyperpaper ranger waybar wofi kitty hyprpolkitagent sxiv pavucontrol`
+**dependencies**: `hyprland htop nvim cava hyperpaper ranger waybar wofi kitty hyprpolkitagent sxiv pavucontrol nwg-look`
 
 **neovim plug**:
 `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+
+## GTK theme
+```bash
+curl -LsSO "https://raw.githubusercontent.com/catppuccin/gtk/v1.0.3/install.py"
+python3 install.py mocha blue
+```
 
 ## Programs
 
