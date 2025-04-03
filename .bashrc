@@ -1,6 +1,4 @@
 # .bashrc
-export XDG_CURRENT_DESKTOP=Hyprland
-export PS1="\[\e[38;2;137;180;250m\]\u@\h:\[\e[0m\]\w\$ "
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -25,9 +23,21 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# vi/vim mode
+set -o vi
+
+bind 'set show-mode-in-prompt on'
+bind 'set vi-ins-mode-string "\e[38;2;137;180;250m\I "'
+bind 'set vi-cmd-mode-string "\e[38;2;137;180;250m\N "'
+
+# Exports
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PS1='\[\e[38;2;137;180;250m\]\u@\h:\[\e[0m\]\w\$ '
+export XDG_CURRENT_DESKTOP=Hyprland
+
 export EDITOR=nvim
 export VISUAL=nvim
+
