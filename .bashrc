@@ -25,10 +25,7 @@ unset rc
 
 # vi/vim mode
 set -o vi
-
 bind 'set show-mode-in-prompt on'
-bind 'set vi-ins-mode-string "\e[38;2;137;180;250m\I "'
-bind 'set vi-cmd-mode-string "\e[38;2;137;180;250m\N "'
 
 # Exports
 export NVM_DIR="$HOME/.nvm"
