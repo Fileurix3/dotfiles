@@ -1,4 +1,3 @@
-
 return {
   'jose-elias-alvarez/null-ls.nvim',
   config = function()
@@ -8,9 +7,7 @@ return {
     null_ls.setup({
       sources = {
         -- Используем Prettier для форматирования
-        null_ls.builtins.formatting.prettier.with({
-          extra_args = { "--single-quote", "--trailing-comma", "es5" }  -- Дополнительные параметры (по желанию)
-        }),
+        null_ls.builtins.formatting.prettier,
       },
     })
 
@@ -18,7 +15,7 @@ return {
     vim.cmd [[
       augroup LspFormatting
         autocmd! * <buffer>
-        autocmd BufWritePre * lua vim.lsp.buf.format({ async = false })
+        autocmd BufWritePre * lua vim.lsp.buf.format({ async = true })
       augroup END
     ]]
   end
