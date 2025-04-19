@@ -17,12 +17,11 @@ vim.keymap.set('n', '<space>q', ':tabclose<CR>', { noremap = true, silent = true
 vim.keymap.set('n', '<space>w', ':tabnew<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<Tab>', ':tabnext<CR>', { noremap = true, silent = true })
 
-vim.keymap.set('n', '<A-1>', ':w<CR>', { noremap = true, silent = true } )
-vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true } )
+vim.keymap.set('n', '<A-l>', ':tabmove +1<CR>', { noremap = true, silent = true } )
+vim.keymap.set('n', '<A-h>', ':tabmove -1<CR>', { noremap = true, silent = true } )
 
--- Save
+-- Save file
 vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true } )
 
 -- Open image in sxiv
 vim.keymap.set('n', '<space>s', ':!sxiv %<CR>', { noremap = true, silent = true })
-
