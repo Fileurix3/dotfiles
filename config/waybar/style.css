@@ -1,3 +1,5 @@
+@import "../themes/mocha.css";
+
 * {
   min-height: 0;
   font-family: JetBrainsMono Nerd Font;
@@ -8,7 +10,7 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  background-color: #181825;
+  background-color: @base;
   border-bottom: 1px solid rgba(137, 180, 250, 0.2);
 }
 
@@ -28,23 +30,23 @@ window#waybar.hidden {
   min-height: 0;
   margin: 4px 4px;
   border-radius: 8px;
-  color: #cdd6f4;
+  color: @text;
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: @base;
+  background-color: @text;
 }
 
 #workspaces button.active {
-  color: #1e1e2e;
-  background-color: #89b4fa;
+  color: @base;
+  background-color: @blue;
 }
 
 #workspaces button.urgent {
-  background-color: #f38ba8;
+  background-color: @red;
 }
 
 #clock,
@@ -56,12 +58,12 @@ window#waybar.hidden {
   min-height: 0;
   border-radius: 8px;
   margin: 6px 10px;
-  color: #89b4fa;
+  color: @blue;
 }
 
 #custom-sep {
   padding: 0px;
-  color: #585b70;
+  color: @surface2;
 }
 
 window#waybar.empty #window {
@@ -69,50 +71,46 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  color: #74c7ec;
+  color: @sapphire;
 }
 
 #memory {
-  color: #74c7ec;
+  color: @sapphire;
 }
 
 #clock {
-  color: #89b4fa;
+  color: @blue;
 }
 
 #clock.simpleclock {
-  color: #89b4fa;
+  color: @blue;
 }
 
 #window {
-  color: #89b4fa;
+  color: @blue;
 }
 
 #pulseaudio {
-  color: #b4befe;
+  color: @lavender;
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
-}
-
-#custom-logo {
-  color: #89b4fa;
+  color: @subtext0;
 }
 
 @keyframes blink {
   to {
-    background-color: #f38ba8;
-    color: #181825;
+    background-color: @red;
+    color: @mantle;
   }
 }
 
 tooltip {
   border-radius: 8px;
-  background-color: #1e1e2e;
+  background-color: @base;
 }
 
 #tray menu {
-  background: rgb(24, 24, 37);
+  background: @crust;
   color: white;
 }
