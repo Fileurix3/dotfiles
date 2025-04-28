@@ -37,3 +37,6 @@ export XDG_CURRENT_DESKTOP=Hyprland
 
 export EDITOR=nvim
 export VISUAL=nvim
+
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
