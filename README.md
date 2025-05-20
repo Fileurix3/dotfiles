@@ -1,6 +1,6 @@
 # Dotfiles
 
-**dependencies**: `hyprland htop nvim cava hypridle hyprlock hyperpaper ranger waybar wofi kitty hyprpolkitagent sxiv pavucontrol nwg-look`
+**dependencies**: `hyprland htop nvim cava hypridle hyprlock hyperpaper ranger waybar wofi kitty hyprpolkitagent sxiv pavucontrol nwg-look grim slurp`
 
 ## GTK theme
 
