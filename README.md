@@ -52,6 +52,7 @@ python3 install.py mocha blue
 - **SUPER + mouse_left**: move window
 - **SUPER + mouse_right**: resize window
 ### Ranger:
+- **ctrl+c**: show hidden files
 - **dd**: delete
 - **r**: rename
 - **a**: create file
