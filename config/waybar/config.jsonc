@@ -21,14 +21,16 @@
     "format": "  {load}%",
     "tooltip": true,
     "interval": 5,
-    "on-click": "kitty htop"
+    "on-click": "kitty htop",
+    "on-click-right": "kitty glances",
   },
   "memory": {
     "format": "  {percentage}%",
     "tooltip": true,
     "tooltip-format": "RAM  {used}/{total} ({percentage}%)",
     "interval": 5,
-    "on-click": "kitty htop"
+    "on-click": "kitty htop",
+    "on-click-right": "kitty glances",
   },
   "wlr/workspaces": {
     "on-click": "activate",
